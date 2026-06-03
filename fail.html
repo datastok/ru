@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Оплата не прошла | DataStack.pro</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #fef5f0 0%, #f9e8e8 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .fail-card {
+      max-width: 580px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 48px;
+      box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fail-header {
+      background: linear-gradient(125deg, #4a1f2f, #8b3c3c);
+      padding: 40px 32px 32px;
+      text-align: center;
+      color: white;
+    }
+
+    .error-circle {
+      width: 88px;
+      height: 88px;
+      background: #e74c3c;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      box-shadow: 0 12px 24px -8px rgba(231, 76, 60, 0.4);
+    }
+
+    .error-circle i {
+      font-size: 52px;
+      color: white;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+
+    .fail-header h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: -0.3px;
+    }
+
+    .fail-header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .fail-body {
+      padding: 36px 32px 32px;
+    }
+
+    .info-box {
+      background: #fff8f6;
+      border-radius: 28px;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+      border: 1px solid #ffe0d4;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .info-row i {
+      width: 32px;
+      font-size: 22px;
+      color: #c0392b;
+    }
+
+    .info-row strong {
+      font-weight: 700;
+      color: #7b2c1e;
+    }
+
+    .info-row span {
+      color: #5a3a32;
+    }
+
+    .divider {
+      height: 1px;
+      background: #f0dbd4;
+      margin: 24px 0;
+    }
+
+    .next-steps {
+      background: #fff1ed;
+      border-radius: 24px;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+    }
+
+    .next-steps h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #7b2c1e;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .next-steps ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .next-steps li {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: #7b3a2c;
+    }
+
+    .next-steps li i {
+      width: 24px;
+      color: #e67e22;
+      font-size: 16px;
+    }
+
+    .support-message {
+      background: #fef4e8;
+      border-radius: 20px;
+      padding: 16px 20px;
+      margin-bottom: 28px;
+      border-left: 4px solid #f39c12;
+    }
+
+    .support-message p {
+      font-size: 0.9rem;
+      color: #a5672e;
+    }
+
+    .support-message i {
+      margin-right: 8px;
+      color: #f39c12;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 8px;
+    }
+
+    .btn-retry {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(95deg, #e67e22, #d35400);
+      color: white;
+      border: none;
+      padding: 14px 20px;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      font-family: inherit;
+    }
+
+    .btn-retry:hover {
+      background: linear-gradient(95deg, #d35400, #b84300);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 18px -10px #e67e22;
+    }
+
+    .btn-home {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #f0f2f5;
+      color: #2c3e50;
+      border: 1px solid #dcdde1;
+      padding: 14px 20px;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      font-family: inherit;
+    }
+
+    .btn-home:hover {
+      background: #e9ecef;
+      transform: translateY(-2px);
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 28px;
+      font-size: 0.75rem;
+      color: #b8958a;
+    }
+
+    @media (max-width: 520px) {
+      .fail-card {
+        border-radius: 32px;
+      }
+      .fail-header {
+        padding: 32px 24px;
+      }
+      .fail-body {
+        padding: 28px 24px;
+      }
+      .error-circle {
+        width: 72px;
+        height: 72px;
+      }
+      .error-circle i {
+        font-size: 42px;
+      }
+      .fail-header h1 {
+        font-size: 1.6rem;
+      }
+      .btn-group {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="fail-card">
+  <div class="fail-header">
+    <div class="error-circle">
+      <i class="fas fa-times"></i>
+    </div>
+    <h1>Оплата не прошла</h1>
+    <p>Что-то пошло не так. Платёж не был завершён</p>
+  </div>
+
+  <div class="fail-body">
+    <div class="info-box">
+      <div class="info-row">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span><strong>Средства не списаны</strong> — ваш баланс не изменился. Повторите попытку или используйте другой способ оплаты.</span>
+      </div>
+      <div class="info-row">
+        <i class="fas fa-credit-card"></i>
+        <span>Наиболее частые причины: <strong>неверные реквизиты карты, недостаточно средств, ограничение банка, технический сбой</strong>.</span>
+      </div>
+      <div class="info-row">
+        <i class="fas fa-shield-alt"></i>
+        <span>Если средства были списаны, они автоматически вернутся в течение 1–5 рабочих дней (согласно правилам платёжных систем).</span>
+      </div>
+    </div>
+
+    <div class="next-steps">
+      <h3><i class="fas fa-lightbulb"></i> Что делать?</h3>
+      <ul>
+        <li><i class="fas fa-redo-alt"></i> Проверьте правильность номера карты, CVV и срока действия.</li>
+        <li><i class="fas fa-university"></i> Убедитесь, что на карте достаточно средств или подключён интернет-банк для подтверждения.</li>
+        <li><i class="fas fa-sync-alt"></i> Попробуйте оплатить другой картой или через альтернативный платёжный метод (например, криптовалюту).</li>
+        <li><i class="fas fa-clock"></i> Если ошибка повторяется — повторите попытку через 15–20 минут (возможен временный сбой платёжного шлюза).</li>
+      </ul>
+    </div>
+
+    <div class="support-message">
+      <p><i class="fas fa-headset"></i> <strong>Нужна помощь с оплатой или хотите оплатить вручную?</strong> Напишите в Telegram: <strong>@datastack_support</strong> — мы оперативно подскажем альтернативные способы.</p>
+    </div>
+
+    <div class="btn-group">
+      <button onclick="history.back()" class="btn-retry">
+        <i class="fas fa-arrow-left"></i> Вернуться и попробовать снова
+      </button>
+      <a href="/" class="btn-home">
+        <i class="fas fa-home"></i> На главную
+      </a>
+    </div>
+
+    <div class="footer-note">
+      <i class="fas fa-lock"></i> Ваши данные в безопасности. Платёж не был проведён.
+    </div>
+  </div>
+</div>
+
+<script>
+  // Эффект появления и обработка кнопки "Вернуться и попробовать снова"
+  (function() {
+    // Небольшая анимация для кнопок при наведении
+    const btns = document.querySelectorAll('.btn-retry, .btn-home');
+    btns.forEach(btn => {
+      btn.addEventListener('mouseenter', () => {
+        btn.style.transform = 'translateY(-2px)';
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translateY(0)';
+      });
+    });
+
+    // Можно добавить параметры из URL (если перешли с платёжной страницы)
+    const urlParams = new URLSearchParams(window.location.search);
+    const errorCode = urlParams.get('error') || urlParams.get('code');
+    const productName = urlParams.get('product');
+    
+    if (errorCode || productName) {
+      const infoBox = document.querySelector('.info-box');
+      if (infoBox && !document.querySelector('.error-detail-badge')) {
+        const detailDiv = document.createElement('div');
+        detailDiv.className = 'error-detail-badge';
+        detailDiv.style.background = '#fff0eb';
+        detailDiv.style.padding = '10px 14px';
+        detailDiv.style.borderRadius = '20px';
+        detailDiv.style.marginBottom = '16px';
+        detailDiv.style.fontSize = '0.85rem';
+        detailDiv.style.display = 'flex';
+        detailDiv.style.alignItems = 'center';
+        detailDiv.style.gap = '8px';
+        detailDiv.style.color = '#b34a2c';
+        let detailText = '';
+        if (productName) detailText += `Товар: ${productName}. `;
+        if (errorCode) detailText += `Код ошибки: ${errorCode}. `;
+        if (!detailText) detailText = 'Попробуйте другой способ оплаты.';
+        detailDiv.innerHTML = `<i class="fas fa-info-circle"></i> ${detailText}`;
+        infoBox.prepend(detailDiv);
+      }
+    }
+
+    // Функция для возврата на предыдущую страницу с товаром (если есть referrer)
+    const retryBtn = document.querySelector('.btn-retry');
+    if (retryBtn && document.referrer && document.referrer.includes(window.location.hostname) === false) {
+      // Если referrer не наш сайт, то поведение по умолчанию (history.back) работает корректно
+    }
+  })();
+</script>
+</body>
+</html>

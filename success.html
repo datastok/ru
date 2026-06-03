@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Оплата прошла успешно | DataStack.pro</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #e9f0f9 0%, #f2f6fc 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .success-card {
+      max-width: 580px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 48px;
+      box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .success-header {
+      background: linear-gradient(125deg, #0f2b3f, #1a5d8f);
+      padding: 40px 32px 32px;
+      text-align: center;
+      color: white;
+    }
+
+    .checkmark-circle {
+      width: 88px;
+      height: 88px;
+      background: #2ecc71;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      box-shadow: 0 12px 24px -8px rgba(46, 204, 113, 0.4);
+    }
+
+    .checkmark-circle i {
+      font-size: 52px;
+      color: white;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+
+    .success-header h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: -0.3px;
+    }
+
+    .success-header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .success-body {
+      padding: 36px 32px 32px;
+    }
+
+    .info-box {
+      background: #f8fafd;
+      border-radius: 28px;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+      border: 1px solid #e6edf4;
+    }
+
+    .info-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .info-row i {
+      width: 32px;
+      font-size: 22px;
+      color: #1a5d8f;
+    }
+
+    .info-row strong {
+      font-weight: 700;
+      color: #0a2e48;
+    }
+
+    .info-row span {
+      color: #2c557a;
+    }
+
+    .divider {
+      height: 1px;
+      background: #e2e8f0;
+      margin: 24px 0;
+    }
+
+    .next-steps {
+      background: #eef4ff;
+      border-radius: 24px;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+    }
+
+    .next-steps h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #0a2e48;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .next-steps ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .next-steps li {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: #1f4970;
+    }
+
+    .next-steps li i {
+      width: 24px;
+      color: #2c7be5;
+      font-size: 16px;
+    }
+
+    .support-message {
+      background: #fff6e5;
+      border-radius: 20px;
+      padding: 16px 20px;
+      margin-bottom: 28px;
+      border-left: 4px solid #f5a623;
+    }
+
+    .support-message p {
+      font-size: 0.9rem;
+      color: #8a6e2c;
+    }
+
+    .support-message i {
+      margin-right: 8px;
+      color: #f5a623;
+    }
+
+    .btn-home {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      background: linear-gradient(95deg, #0066cc, #004d99);
+      color: white;
+      border: none;
+      padding: 16px 20px;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+      font-family: inherit;
+    }
+
+    .btn-home:hover {
+      background: linear-gradient(95deg, #0055bb, #003f7f);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 20px -12px #0066cc66;
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 0.75rem;
+      color: #8ba3bc;
+    }
+
+    @media (max-width: 520px) {
+      .success-card {
+        border-radius: 32px;
+      }
+      .success-header {
+        padding: 32px 24px;
+      }
+      .success-body {
+        padding: 28px 24px;
+      }
+      .checkmark-circle {
+        width: 72px;
+        height: 72px;
+      }
+      .checkmark-circle i {
+        font-size: 42px;
+      }
+      .success-header h1 {
+        font-size: 1.6rem;
+      }
+      .info-row {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="success-card">
+  <div class="success-header">
+    <div class="checkmark-circle">
+      <i class="fas fa-check"></i>
+    </div>
+    <h1>Оплата прошла успешно!</h1>
+    <p>Спасибо за доверие и покупку</p>
+  </div>
+
+  <div class="success-body">
+    <div class="info-box">
+      <div class="info-row">
+        <i class="fas fa-envelope"></i>
+        <span><strong>На ваш email</strong> в ближайшее время придёт письмо со ссылкой для скачивания базы данных.</span>
+      </div>
+      <div class="info-row">
+        <i class="fas fa-clock"></i>
+        <span>Ссылка будет активна <strong>7 дней</strong>. Рекомендуем сохранить её надёжно.</span>
+      </div>
+      <div class="info-row">
+        <i class="fas fa-file-alt"></i>
+        <span>Формат данных: CSV / Excel (XLSX) / JSON — подойдёт для любых CRM и парсеров.</span>
+      </div>
+    </div>
+
+    <div class="next-steps">
+      <h3><i class="fas fa-hourglass-half"></i> Что дальше?</h3>
+      <ul>
+        <li><i class="fas fa-check-circle"></i> Мы обрабатываем платёж и подготавливаем актуальный срез базы.</li>
+        <li><i class="fas fa-paper-plane"></i> В течение 15–40 минут (обычно быстрее) вы получите письмо с прямой ссылкой на скачивание.</li>
+        <li><i class="fas fa-life-ring"></i> Если письмо не пришло — проверьте папку «Спам» или свяжитесь с поддержкой.</li>
+      </ul>
+    </div>
+
+    <div class="support-message">
+      <p><i class="fas fa-headset"></i> <strong>Нужна помощь с загрузкой?</strong> Напишите нам в Telegram: <strong>@datastack_support</strong> — ответим в течение часа.</p>
+    </div>
+
+    <a href="/" class="btn-home">
+      <i class="fas fa-arrow-left"></i> Вернуться на главную
+    </a>
+
+    <div class="footer-note">
+      <i class="fas fa-lock"></i> Все транзакции защищены. Данные передаются по SSL.
+    </div>
+  </div>
+</div>
+
+<script>
+  // Эффект появления и небольшая анимация (можно также вытащить параметры из URL, если нужно показать название товара)
+  (function() {
+    // Пробуем получить параметр товара из URL (если перешли с лендинга с параметрами)
+    const urlParams = new URLSearchParams(window.location.search);
+    const product = urlParams.get('product');
+    const price = urlParams.get('price');
+
+    // Если есть параметры, можно добавить в интерфейс небольшую плашку (но это необязательно)
+    if (product) {
+      const infoBox = document.querySelector('.info-box');
+      if (infoBox && !document.querySelector('.product-badge')) {
+        const badge = document.createElement('div');
+        badge.className = 'product-badge';
+        badge.style.background = '#e9f0f9';
+        badge.style.padding = '10px 14px';
+        badge.style.borderRadius = '20px';
+        badge.style.marginBottom = '16px';
+        badge.style.fontSize = '0.85rem';
+        badge.style.display = 'flex';
+        badge.style.alignItems = 'center';
+        badge.style.gap = '8px';
+        badge.innerHTML = `<i class="fas fa-database"></i> Вы приобрели: <strong>${product}</strong> ${price ? `на сумму ${price} ₽` : ''}`;
+        infoBox.prepend(badge);
+      }
+    }
+
+    // Анимация для кнопки при наведении
+    const btn = document.querySelector('.btn-home');
+    if (btn) {
+      btn.addEventListener('mouseenter', () => {
+        btn.style.transform = 'translateY(-2px)';
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translateY(0)';
+      });
+    }
+  })();
+</script>
+</body>
+</html>

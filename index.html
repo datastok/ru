@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Базы данных | Резюме, Email, WhatsApp, Viber, Telegram 2025</title>
+  <meta name="description" content="Купить базы резюме HeadHunter, Superjob, Rabota.ru, email-базы Mail.ru, контакты WhatsApp/Viber/Telegram, каталог организаций 2GIS. Актуальные данные 2025.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fc;
+      color: #0a2540;
+      scroll-behavior: smooth;
+      line-height: 1.45;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* HEADER */
+    .header {
+      background: #ffffff;
+      border-bottom: 1px solid #e9edf4;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.98);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 14px 0;
+      gap: 16px;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #0066cc, #003366);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 26px;
+      box-shadow: 0 10px 18px -8px rgba(0,102,204,0.4);
+    }
+    .logo-text h1 {
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      background: linear-gradient(125deg, #0b2b44, #0070e0);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .logo-text p {
+      font-size: 0.75rem;
+      color: #5b7a9a;
+      font-weight: 500;
+    }
+    .header-badge {
+      background: #eef3fc;
+      padding: 6px 18px;
+      border-radius: 60px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #0052a5;
+    }
+    .header-badge i {
+      margin-right: 6px;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(110deg, #eef4ff 0%, #ffffff 70%);
+      padding: 56px 0 64px;
+    }
+    .hero-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .hero-content {
+      flex: 1.2;
+    }
+    .hero-badge {
+      background: #ffe8e0;
+      color: #c2410c;
+      padding: 6px 16px;
+      border-radius: 60px;
+      display: inline-block;
+      font-weight: 700;
+      font-size: 0.8rem;
+      margin-bottom: 20px;
+    }
+    .hero-content h2 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1.2;
+      background: linear-gradient(125deg, #0f2b3f, #0070e0);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 20px;
+    }
+    .hero-content p {
+      font-size: 1.1rem;
+      color: #2c4f6e;
+      max-width: 540px;
+      margin-bottom: 28px;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .stat {
+      background: rgba(0,102,204,0.06);
+      padding: 10px 20px;
+      border-radius: 48px;
+    }
+    .stat-number {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: #0066cc;
+    }
+    .hero-visual {
+      flex: 0.9;
+      background: rgba(0,102,204,0.02);
+      border-radius: 64px;
+      padding: 24px;
+      text-align: center;
+    }
+    .hero-visual i {
+      font-size: 140px;
+      color: #2c7be5;
+      opacity: 0.8;
+    }
+
+    /* section title */
+    .section-title {
+      text-align: center;
+      margin: 56px 0 40px;
+    }
+    .section-title span {
+      background: #e7f0fe;
+      padding: 6px 18px;
+      border-radius: 60px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #0066cc;
+      display: inline-block;
+      margin-bottom: 14px;
+    }
+    .section-title h2 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #0a2a44;
+    }
+    .section-title p {
+      color: #4a6e8c;
+      max-width: 680px;
+      margin: 12px auto 0;
+    }
+
+    /* СЕТКА КАРТОЧЕК С ФОРМАМИ */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 20px 0 20px;
+    }
+    .product-card {
+      background: #ffffff;
+      border-radius: 32px;
+      box-shadow: 0 15px 32px -14px rgba(0, 0, 0, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #eef2f9;
+      overflow: hidden;
+    }
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 38px -18px rgba(0, 68, 128, 0.25);
+      border-color: #cfe2ff;
+    }
+    .card-img {
+      background: #f8fafd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      padding: 28px 16px 20px;
+      border-bottom: 1px solid #eff3f9;
+      min-height: 130px;
+    }
+    .card-img i {
+      font-size: 58px;
+      color: #1e6bc7;
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.03));
+    }
+    .multi-icon i {
+      font-size: 48px;
+      margin: 0 4px;
+    }
+    .card-content {
+      padding: 16px 20px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-content h3 {
+      font-size: 1.28rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #102b40;
+    }
+    .desc {
+      font-size: 0.85rem;
+      color: #55718e;
+      margin-bottom: 16px;
+      line-height: 1.45;
+    }
+    .price {
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: #1a5d8f;
+      margin: 4px 0 12px;
+    }
+    .price small {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #6f8eac;
+    }
+    .availability {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #e4f5e7;
+      color: #1e7840;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 40px;
+      width: fit-content;
+      margin-bottom: 14px;
+    }
+
+    .product-form {
+      margin: 12px 0 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .product-form input {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 28px;
+      border: 1.5px solid #e2e9f2;
+      font-family: inherit;
+      font-size: 0.85rem;
+      background: #fefefe;
+      transition: 0.2s;
+    }
+    .product-form input:focus {
+      outline: none;
+      border-color: #2c7be5;
+      box-shadow: 0 0 0 3px rgba(44,123,229,0.08);
+    }
+    .btn-primary {
+      background: linear-gradient(95deg, #0066cc, #004d99);
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 44px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: inherit;
+      width: 100%;
+      margin-top: 6px;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(95deg, #0055bb, #003f7f);
+      transform: scale(0.98);
+      box-shadow: 0 10px 18px -8px #0066cc66;
+    }
+
+    .steps-banner {
+      background: linear-gradient(125deg, #102f44 0%, #1b4c6e 100%);
+      margin: 70px 0;
+      border-radius: 48px;
+      padding: 48px 32px;
+      color: white;
+      box-shadow: 0 20px 30px -15px rgba(0,0,0,0.2);
+    }
+    .steps-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .step-item {
+      flex: 1;
+      text-align: center;
+      min-width: 150px;
+    }
+    .step-icon {
+      background: rgba(255,255,255,0.2);
+      width: 60px;
+      height: 60px;
+      border-radius: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      font-size: 28px;
+    }
+    .step-item h4 { font-size: 1.25rem; margin-bottom: 8px; font-weight: 700;}
+    .step-item p { opacity: 0.85; font-size: 0.9rem;}
+
+    /* НОВАЯ ФОРМА С AJAX И СООБЩЕНИЕМ */
+    .form-block {
+      background: white;
+      border-radius: 48px;
+      box-shadow: 0 20px 40px -18px rgba(0, 0, 0, 0.08);
+      padding: 48px 40px;
+      margin: 40px 0 60px;
+      border: 1px solid #e6edf6;
+      transition: all 0.3s ease;
+    }
+    .form-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+    }
+    .form-info { flex: 1; }
+    .form-info h3 { font-size: 1.9rem; font-weight: 800; margin-bottom: 18px; color: #0a2e48; }
+    .form-info p { color: #527a9b; margin-bottom: 16px; }
+    .contact-form { flex: 1.2; transition: all 0.3s ease; }
+    .input-group { margin-bottom: 20px; }
+    .input-group input, .input-group textarea {
+      width: 100%;
+      padding: 14px 20px;
+      border-radius: 44px;
+      border: 1.5px solid #e2e9f2;
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: 0.2s;
+      background: #fff;
+    }
+    .input-group textarea {
+      border-radius: 28px;
+      resize: vertical;
+      min-height: 110px;
+    }
+    .input-group input:focus, .input-group textarea:focus {
+      outline: none;
+      border-color: #2c7be5;
+      box-shadow: 0 0 0 3px rgba(44,123,229,0.1);
+    }
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.85rem;
+      color: #2a577b;
+    }
+    .btn-submit {
+      background: #132e48;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 60px;
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .btn-submit:hover { background: #1d4a6e; transform: translateY(-2px); }
+    
+    /* Стили для состояния успеха */
+    .success-message-block {
+      text-align: center;
+      padding: 20px;
+      background: #e8f5e9;
+      border-radius: 32px;
+      color: #2e7d32;
+    }
+    .success-message-block i {
+      font-size: 64px;
+      margin-bottom: 16px;
+      color: #4caf50;
+    }
+    .success-message-block h4 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+    .btn-new-message {
+      background: #4caf50;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 60px;
+      color: white;
+      font-weight: 700;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .btn-new-message:hover {
+      background: #388e3c;
+      transform: scale(0.98);
+    }
+
+    .footer {
+      background: #0c1e2c;
+      color: #bfd6ea;
+      padding: 44px 0 36px;
+      border-radius: 36px 36px 0 0;
+      margin-top: 48px;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 32px;
+    }
+    .payments i { font-size: 32px; margin-right: 12px; opacity: 0.8; }
+    .to-top {
+      position: fixed;
+      bottom: 26px;
+      right: 26px;
+      background: #1f6392;
+      width: 48px;
+      height: 48px;
+      border-radius: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      transition: 0.2s;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+      z-index: 99;
+      color: white;
+    }
+    .to-top.show { opacity: 1; }
+
+    @media (max-width: 780px) {
+      .container { padding: 0 20px; }
+      .hero-content h2 { font-size: 2rem; }
+      .hero-visual i { font-size: 90px; }
+      .section-title h2 { font-size: 1.7rem; }
+      .steps-banner { padding: 32px 20px; }
+      .form-block { padding: 32px 24px; }
+      .form-info h3 { font-size: 1.6rem; }
+      .products-grid { gap: 20px; }
+    }
+    @media (max-width: 480px) {
+      .hero-stats { gap: 12px; }
+      .stat-number { font-size: 1.3rem; }
+      .logo-text h1 { font-size: 1.2rem; }
+      .header-badge { font-size: 0.7rem; padding: 4px 12px; }
+      .card-img i { font-size: 46px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <div class="logo-area">
+        <div class="logo-icon"><i class="fas fa-database"></i></div>
+        <div class="logo-text">
+          <h1>DataStack.pro</h1>
+          <p>Базы данных & контакты</p>
+        </div>
+      </div>
+      <div class="header-badge"><i class="fas fa-shield-alt"></i>  Верифицированные источники 2025</div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-skull-crosswalk"></i>  Даркнет-сбор + партнёрские каналы</div>
+        <h2>Резюме · Email · WhatsApp · Telegram · Viber</h2>
+        <p>Огромные массивы: HeadHunter, Superjob, Rabota.ru, 2GIS организации, почтовая база Mail.ru. Готовые выборки с контактами.</p>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-number">7.5M+</span><br>резюме</div>
+          <div class="stat"><span class="stat-number">20M+</span><br>email адресов</div>
+          <div class="stat"><span class="stat-number">4M+</span><br>организаций</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <i class="fas fa-chart-line"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="section-title">
+    <span><i class="fas fa-gem"></i>  ТОП предложения сезона</span>
+    <h2>Выберите базу данных для бизнеса</h2>
+    <p>Укажите контактные данные и нажмите «Купить» — ссылка на оплату будет отправлена на email</p>
+  </div>
+
+  <div class="products-grid" id="catalogGrid">
+    <div class="product-card" data-product="HeadHunter 3.7M" data-price="15000" data-paypage="pay1.html">
+      <div class="card-img"><i class="fab fa-hh"></i></div>
+      <div class="card-content">
+        <span class="availability"><i class="fas fa-circle"></i> В наличии</span>
+        <h3>HeadHunter 2023–2025</h3>
+        <div class="desc">3 700 000 записей: ФИО, email, телефоны, соцсети, город, должность.</div>
+        <div class="price">15 000 ₽ <small>RUB</small></div>
+        <div class="product-form">
+          <input type="text" placeholder="Ваше имя *" class="buyer-name" required>
+          <input type="email" placeholder="Email *" class="buyer-email" required>
+          <input type="tel" placeholder="Телефон" class="buyer-phone">
+        </div>
+        <button class="btn-primary buy-button"><i class="fas fa-shopping-cart"></i> Купить</button>
+      </div>
+    </div>
+    <div class="product-card" data-product="Superjob 2.15M" data-price="12000" data-paypage="pay2.html">
+      <div class="card-img"><i class="fas fa-user-tie"></i></div>
+      <div class="card-content">
+        <span class="availability"><i class="fas fa-circle"></i> В наличии</span>
+        <h3>Superjob 2021–2025</h3>
+        <div class="desc">2 150 000 контактов: телефоны, email, профили соцсетей, регионы.</div>
+        <div class="price">12 000 ₽ <small>RUB</small></div>
+        <div class="product-form">
+          <input type="text" placeholder="Ваше имя *" class="buyer-name" required>
+          <input type="email" placeholder="Email *" class="buyer-email" required>
+          <input type="tel" placeholder="Телефон" class="buyer-phone">
+        </div>
+        <button class="btn-primary buy-button"><i class="fas fa-shopping-cart"></i> Купить</button>
+      </div>
+    </div>
+    <div class="product-card" data-product="Rabota.ru 1.67M" data-price="10000" data-paypage="pay3.html">
+      <div class="card-img"><i class="fas fa-briefcase"></i></div>
+      <div class="card-content">
+        <span class="availability"><i class="fas fa-circle"></i> В наличии</span>
+        <h3>Rabota.ru 2024–2025</h3>
+        <div class="desc">1 670 000 резюме + актуальные контакты, сфера деятельности.</div>
+        <div class="price">10 000 ₽ <small>RUB</small></div>
+        <div class="product-form">
+          <input type="text" placeholder="Ваше имя *" class="buyer-name" required>
+          <input type="email" placeholder="Email *" class="buyer-email" required>
+          <input type="tel" placeholder="Телефон" class="buyer-phone">
+        </div>
+        <button class="btn-primary buy-button"><i class="fas fa-shopping-cart"></i> Купить</button>
+      </div>
+    </div>
+    <div class="product-card" data-product="2GIS 4M организации" data-price="10000" data-paypage="pay4.html">
+      <div class="card-img"><i class="fas fa-store"></i></div>
+      <div class="card-content">
+        <span class="availability"><i class="fas fa-circle"></i> В наличии</span>
+        <h3>2GIS — все организации РФ</h3>
+        <div class="desc">4 000 000 компаний: email, телефоны, соцсети, адреса, рубрики.</div>
+        <div class="price">10 000 ₽ <small>RUB</small></div>
+        <div class="product-form">
+          <input type="text" placeholder="Ваше имя *" class="buyer-name" required>
+          <input type="email" placeholder="Email *" class="buyer-email" required>
+          <input type="tel" placeholder="Телефон" class="buyer-phone">
+        </div>
+        <button class="btn-primary buy-button"><i class="fas fa-shopping-cart"></i> Купить</button>
+      </div>
+    </div>
+    <div class="product-card" data-product="Mail.ru email 20M" data-price="10000" data-paypage="pay5.html">
+      <div class="card-img"><i class="fas fa-envelope"></i></div>
+      <div class="card-content">
+        <span class="availability"><i class="fas fa-circle"></i> В наличии</span>
+        <h3>Email база Mail.ru</h3>
+        <div class="desc">20 000 000 уникальных адресов, идеально для рассылок.</div>
+        <div class="price">10 000 ₽ <small>RUB</small></div>
+        <div class="product-form">
+          <input type="text" placeholder="Ваше имя *" class="buyer-name" required>
+          <input type="email" placeholder="Email *" class="buyer-email" required>
+          <input type="tel" placeholder="Телефон" class="buyer-phone">
+        </div>
+        <button class="btn-primary buy-button"><i class="fas fa-shopping-cart"></i> Купить</button>
+      </div>
+    </div>
+    <div class="product-card" data-product="WhatsApp/Telegram/Viber" data-price="8000" data-paypage="pay6.html">
+      <div class="card-img multi-icon"><i class="fab fa-whatsapp"></i><i class="fab fa-telegram"></i><i class="fab fa-viber"></i></div>
+      <div class="card-content">
+        <span class="availability"><i class="fas fa-circle"></i> Горячее предложение</span>
+        <h3>WhatsApp + Telegram + Viber</h3>
+        <div class="desc">Актуальные номера, разбивка по Geo и интересам.</div>
+        <div class="price">8 000 ₽ <small>RUB</small></div>
+        <div class="product-form">
+          <input type="text" placeholder="Ваше имя *" class="buyer-name" required>
+          <input type="email" placeholder="Email *" class="buyer-email" required>
+          <input type="tel" placeholder="Телефон" class="buyer-phone">
+        </div>
+        <button class="btn-primary buy-button"><i class="fas fa-headset"></i> Купить</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="steps-banner">
+    <div class="steps-flex">
+      <div class="step-item"><div class="step-icon"><i class="fas fa-address-card"></i></div><h4>Заполните данные</h4><p>Имя, Email, телефон</p></div>
+      <div class="step-item"><div class="step-icon"><i class="fas fa-credit-card"></i></div><h4>Оплата</h4><p>Переход на защищённую страницу</p></div>
+      <div class="step-item"><div class="step-icon"><i class="fas fa-download"></i></div><h4>Мгновенная выдача</h4><p>Ссылка на архив после оплаты</p></div>
+    </div>
+  </div>
+
+  <!-- НОВАЯ ФОРМА С AJAX-ОТПРАВКОЙ НА script.google.com/777777 -->
+  <div class="form-block" id="orderForm">
+    <div class="form-grid" id="formGridContainer">
+      <div class="form-info">
+        <h3>Остались вопросы?</h3>
+        <p><i class="fas fa-comment"></i>  Напишите нам — поможем подобрать сегмент, покажем демо-фрагмент базы.</p>
+        <div><i class="fas fa-tachometer-alt"></i>  Консультация 24/7 в Telegram: <strong>@datastack_support</strong></div>
+      </div>
+      <div class="contact-form" id="contactFormWrapper">
+        <!-- Форма, которая будет заменяться -->
+        <form id="questionForm">
+          <div class="input-group"><input type="text" id="formName" placeholder="Ваше имя" required></div>
+          <div class="input-group"><input type="email" id="formEmail" placeholder="Email для ответа" required></div>
+          <div class="input-group"><textarea id="formMsg" placeholder="Какой базой интересуетесь? Укажите также удобный способ связи."></textarea></div>
+          <div class="input-group checkbox-label"><input type="checkbox" id="formConfirm" checked> <label for="formConfirm">Согласен на обработку персональных данных</label></div>
+          <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Отправить запрос</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-copyright">
+        <i class="fas fa-database"></i> DataStack.pro <br>
+        © 2023-<script>document.write(new Date().getFullYear())</script> «Базовичкофф» <br>
+        Лидер по качеству контактов
+      </div>
+      <div class="payments">
+        <i class="fab fa-cc-visa"></i> <i class="fab fa-cc-mastercard"></i> <i class="fab fa-bitcoin"></i> <i class="fas fa-mobile-alt"></i>
+        <p style="margin-top: 10px; font-size: 0.7rem;">Данные из открытых и партнёрских источников</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="to-top" id="toTopBtn"><i class="fas fa-chevron-up"></i></div>
+
+<script>
+  // НОВЫЙ ВЕБХУК ДЛЯ ФОРМЫ (как в задаче)
+  const FORM_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbyZ5vrhn_4payQV0kyp8jLllMdTLjbY_aNLunj4E4qlw_wGj5gpABNnhD6pIN1jCjaE2Q/exec';
+  // Вебхук для карточек товаров (оставлен прежний)
+  const PRODUCT_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbyZ5vrhn_4payQV0kyp8jLllMdTLjbY_aNLunj4E4qlw_wGj5gpABNnhD6pIN1jCjaE2Q/exec';
+
+  // Функция отправки вебхука с формы (без перезагрузки)
+  async function sendFormWebhook(data) {
+    try {
+      const response = await fetch(FORM_WEBHOOK_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      // При режиме no-cors ответ недоступен, но ошибок сети не будет
+      return true;
+    } catch (error) {
+      console.warn('Form webhook error:', error);
+      return false;
+    }
+  }
+
+  // Функция отображения сообщения об успехе
+  function showSuccessMessage() {
+    const formWrapper = document.getElementById('contactFormWrapper');
+    const successHtml = `
+      <div class="success-message-block">
+        <i class="fas fa-check-circle"></i>
+        <h4>Сообщение успешно отправлено!</h4>
+        <p>Наш менеджер свяжется с вами в ближайшее время.</p>
+        <button class="btn-new-message" id="newMessageBtn">
+          <i class="fas fa-plus-circle"></i> Отправить ещё одно сообщение
+        </button>
+      </div>
+    `;
+    formWrapper.innerHTML = successHtml;
+    
+    const newMsgBtn = document.getElementById('newMessageBtn');
+    if (newMsgBtn) {
+      newMsgBtn.addEventListener('click', () => {
+        // Восстанавливаем форму
+        restoreForm();
+      });
+    }
+  }
+
+  // Функция восстановления формы
+  function restoreForm() {
+    const formWrapper = document.getElementById('contactFormWrapper');
+    const formHtml = `
+      <form id="questionForm">
+        <div class="input-group"><input type="text" id="formName" placeholder="Ваше имя" required></div>
+        <div class="input-group"><input type="email" id="formEmail" placeholder="Email для ответа" required></div>
+        <div class="input-group"><textarea id="formMsg" placeholder="Какой базой интересуетесь? Укажите также удобный способ связи."></textarea></div>
+        <div class="input-group checkbox-label"><input type="checkbox" id="formConfirm" checked> <label for="formConfirm">Согласен на обработку персональных данных</label></div>
+        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Отправить запрос</button>
+      </form>
+    `;
+    formWrapper.innerHTML = formHtml;
+    
+    // Повторно привязываем обработчик
+    const newForm = document.getElementById('questionForm');
+    if (newForm) {
+      newForm.addEventListener('submit', handleFormSubmit);
+    }
+  }
+
+  // Обработчик отправки формы
+  async function handleFormSubmit(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('formName')?.value.trim();
+    const email = document.getElementById('formEmail')?.value.trim();
+    const msg = document.getElementById('formMsg')?.value.trim();
+    const confirmChk = document.getElementById('formConfirm')?.checked;
+    
+    if (!name) {
+      alert('Пожалуйста, введите ваше имя');
+      document.getElementById('formName')?.focus();
+      return;
+    }
+    if (!email) {
+      alert('Пожалуйста, введите ваш email');
+      document.getElementById('formEmail')?.focus();
+      return;
+    }
+    if (!email.includes('@') || !email.includes('.')) {
+      alert('Введите корректный email (пример: name@domain.com)');
+      document.getElementById('formEmail')?.focus();
+      return;
+    }
+    if (!msg) {
+      alert('Пожалуйста, напишите ваш вопрос');
+      document.getElementById('formMsg')?.focus();
+      return;
+    }
+    if (!confirmChk) {
+      alert('Подтвердите согласие на обработку персональных данных');
+      return;
+    }
+    
+    // Подготавливаем JSON для отправки
+    const payload = {
+      timestamp: new Date().toISOString(),
+      type: 'feedback_form',
+      customer: {
+        name: name,
+        email: email
+      },
+      message: msg,
+      source: 'landing_contact_form'
+    };
+    
+    // Отправляем вебхук (не дожидаемся ответа, но показываем успех)
+    await sendFormWebhook(payload);
+    
+    // Показываем сообщение об успехе и скрываем форму
+    showSuccessMessage();
+  }
+
+  // Обработчики для карточек товаров (оставляем как есть, только меняем URL вебхука)
+  function sendProductWebhook(data, redirectUrl) {
+    fetch(PRODUCT_WEBHOOK_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+      keepalive: true
+    }).catch(e => console.warn('Product webhook error:', e));
+    window.location.href = redirectUrl;
+  }
+
+  const buyButtons = document.querySelectorAll('.buy-button');
+  buyButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const card = btn.closest('.product-card');
+      if (!card) return;
+      const nameInput = card.querySelector('.buyer-name');
+      const emailInput = card.querySelector('.buyer-email');
+      const phoneInput = card.querySelector('.buyer-phone');
+      const name = nameInput ? nameInput.value.trim() : '';
+      const email = emailInput ? emailInput.value.trim() : '';
+      const phone = phoneInput ? phoneInput.value.trim() : '';
+      if (!name) { alert('Введите имя'); nameInput?.focus(); return; }
+      if (!email) { alert('Введите email'); emailInput?.focus(); return; }
+      if (!email.includes('@')) { alert('Корректный email'); emailInput?.focus(); return; }
+      const productName = card.getAttribute('data-product') || 'Товар';
+      const price = card.getAttribute('data-price') || '0';
+      const payPage = card.getAttribute('data-paypage');
+      if (!payPage) { alert('Страница оплаты недоступна'); return; }
+      const payload = {
+        timestamp: new Date().toISOString(),
+        product: productName,
+        price_rub: price,
+        customer: { name, email, phone },
+        source: 'landing_product_card'
+      };
+      sendProductWebhook(payload, payPage);
+    });
+  });
+
+  // Инициализация формы и навешивание обработчика
+  const initialForm = document.getElementById('questionForm');
+  if (initialForm) {
+    initialForm.addEventListener('submit', handleFormSubmit);
+  }
+
+  // Кнопка наверх
+  const toTopBtn = document.getElementById('toTopBtn');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) toTopBtn.classList.add('show');
+    else toTopBtn.classList.remove('show');
+  });
+  toTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // Плавное появление карточек
+  const cards = document.querySelectorAll('.product-card');
+  if (cards.length) {
+    cards.forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(18px)';
+      card.style.transition = 'opacity 0.5s ease, transform 0.4s ease';
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.05 });
+    cards.forEach(card => observer.observe(card));
+    setTimeout(() => {
+      cards.forEach(card => {
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      });
+    }, 150);
+  }
+</script>
+</body>
+</html>
